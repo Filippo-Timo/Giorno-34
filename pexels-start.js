@@ -1,6 +1,6 @@
 const imagesURL = "https://api.pexels.com/v1/search?query=hamsters";
-const apiKey = "mWOK34O6lk6XoMG2iaBWqFzIUEXs1U3chpZpQ4CPHkKnF0BToljJXiXr";
 const secondButtonImgs = "https://api.pexels.com/v1/search?query=tigers";
+const apiKey = "mWOK34O6lk6XoMG2iaBWqFzIUEXs1U3chpZpQ4CPHkKnF0BToljJXiXr";
 
 const changeImages = function () {
   fetch(imagesURL, {
