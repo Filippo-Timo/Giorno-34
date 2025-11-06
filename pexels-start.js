@@ -22,19 +22,19 @@ const changeImages = function () {
       const loadSecondary = document.getElementById("loadSecondaryButton");
       let allImgs = document.querySelectorAll("img");
       loadButton.addEventListener("click", (e) => {
+        singleObj.photos.forEach((element, i) => {
+          if (allImgs[i]) {
+            allImgs[i].src = element.src.original;
+          }
+        });
+      });
+      loadSecondary.addEventListener("click", (e) => {
         singleObj.photos.forEach((element, index) => {
           if (allImgs[index]) {
             allImgs[index].src = element.src.original;
           }
         });
       });
-      //   loadSecondary.addEventListener("click", (e) => {
-      //     singleObj.photos.forEach((element, index) => {
-      //       if (allImgs[index]) {
-      //         allImgs[index].src = element.src.original;
-      //       }
-      //     });
-      //   });
     })
     .catch((err) => {
       console.log("ERRORE NEL CATCH:", err);
