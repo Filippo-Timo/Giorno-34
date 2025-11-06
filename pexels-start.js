@@ -24,14 +24,14 @@ const changeImages = function () {
       loadButton.addEventListener("click", (e) => {
         singleObj.photos.forEach((element, i) => {
           if (allImgs[i]) {
-            allImgs[i].src = element.src.original;
+            allImgs[i].src = element.src.tiny;
           }
         });
       });
       loadSecondary.addEventListener("click", (e) => {
         singleObj.photos.forEach((element, index) => {
           if (allImgs[index]) {
-            allImgs[index].src = element.src.original;
+            allImgs[index].src = element.src.tiny;
           }
         });
       });
