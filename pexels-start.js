@@ -28,13 +28,13 @@ const changeImages = function () {
           }
         });
       });
-      loadSecondary.addEventListener("click", (e) => {
-        singleObj.photos.forEach((element, index) => {
-          if (allImgs[index]) {
-            allImgs[index].src = element.src.original;
-          }
-        });
-      });
+      //   loadSecondary.addEventListener("click", (e) => {
+      //     singleObj.photos.forEach((element, index) => {
+      //       if (allImgs[index]) {
+      //         allImgs[index].src = element.src.original;
+      //       }
+      //     });
+      //   });
     })
     .catch((err) => {
       console.log("ERRORE NEL CATCH:", err);
